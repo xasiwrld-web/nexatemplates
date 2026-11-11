@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexaTemplates - Discord Templates</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fc;
+  color: #202333;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+.logo { font-size: 23px; font-weight: bold; }
+.logo span { color: #6366f1; }
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: white;
+}
+.hero h1 { font-size: 42px; }
+.hero p { color: #777; }
+.hero button, .product button {
+  background: #6366f1;
+  color: white;
+  border: 0;
+  padding: 13px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.products {
+  padding: 55px 8%;
+}
+.products h2 { text-align: center; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+.product {
+  background: white;
+  padding: 25px;
+  border: 1px solid #eee;
+  border-radius: 14px;
+}
+.product .emoji { font-size: 35px; }
+.price { font-weight: bold; font-size: 20px; }
+footer {
+  text-align: center;
+  padding: 35px;
+  background: white;
+  color: #888;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Nexa<span>Templates</span></div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#boutique">Boutique</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="accueil">
+  <h1>Le serveur Discord parfait commence ici.</h1>
+  <p>Découvre des templates Discord modernes
+  pour toutes tes communautés.</p>
+  <a href="#boutique">
+    <button>Explorer la boutique</button>
+  </a>
+</section>
+
+<section class="products" id="boutique">
+  <h2>Notre boutique</h2>
+
+  <div class="grid">
+
+    <div class="product">
+      <div class="emoji">🎮</div>
+      <h3>Gaming Template</h3>
+      <p>Un serveur gaming organisé et moderne.</p>
+      <p class="price">Gratuit</p>
+      <button onclick="alert('Lien du template à ajouter !')">
+        Découvrir
+      </button>
+    </div>
+
+    <div class="product">
+      <div class="emoji">🌐</div>
+      <h3>Community Template</h3>
+      <p>Un espace idéal pour une communauté.</p>
+      <p class="price">2,99 €</p>
+      <button onclick="alert('Lien de paiement à ajouter !')">
+        Acheter
+      </button>
+    </div>
+
+    <div class="product">
+      <div class="emoji">👑</div>
+      <h3>Premium Template</h3>
+      <p>Une organisation complète et professionnelle.</p>
+      <p class="price">4,99 €</p>
+      <button onclick="alert('Lien de paiement à ajouter !')">
+        Acheter
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<footer id="contact">
+  <p>© 2026 NexaTemplates</p>
+  <p>Des templates Discord pour tous.</p>
+</footer>
+
+</body>
+</html>
